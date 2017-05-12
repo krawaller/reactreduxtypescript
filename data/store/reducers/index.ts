@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 
-import { State } from '../../interfaces';
+import { State } from '../../types';
 
 import { messagingReducer } from './messaging';
 

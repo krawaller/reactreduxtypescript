@@ -22,5 +22,8 @@
     "tslint-react": "^3.0.0",
     "typescript": "^2.3.2",
     "webpack": "^2.5.1"
+  },
+  "scripts": {
+    "build": "webpack"
   }
 }

@@ -6,7 +6,7 @@ import { Action } from '@types/redux-actions';
 import { initialState } from '../initialstate';
 import { addUIMessage, dismissUIMessage } from '../../actions/messaging';
 import { ADD_UI_MESSAGE, DISMISS_UI_MESSAGE } from '../../constants';
-import { MessagingState } from '../../interfaces';
+import { MessagingState } from '../../types';
 
 export const messagingReducer = handleActions<MessagingState>(
   {

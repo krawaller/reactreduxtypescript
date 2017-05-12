@@ -1,4 +1,4 @@
-import { State } from '../interfaces';
+import { State } from '../types';
 
 export const initialState: State = {
   messaging: {

@@ -1,6 +1,6 @@
 import { createAction } from 'redux-actions';
 
-import { UIMessageType, UIMessage } from '../interfaces';
+import { UIMessageType, UIMessage } from '../types';
 import { ADD_UI_MESSAGE, DISMISS_UI_MESSAGE } from '../constants';
 
 export interface addUIMessage {
@@ -12,4 +12,6 @@ export const addUIMessage = createAction<addUIMessage, string, UIMessageType>(
 );
 
 export type dismissUIMessage = number;
-export const dismissUIMessage = createAction<number>(DISMISS_UI_MESSAGE);
+export const dismissUIMessage = createAction<dismissUIMessage, number>(
+  DISMISS_UI_MESSAGE, id => id
+);

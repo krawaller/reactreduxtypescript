@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "lib": [
+      "dom",
+      "es2015",
+      "es5"
+    ],
+    "types": ["react","react-dom","react-redux"]
+  },
+  "exclude": ["node_modules"]
+}

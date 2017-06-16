@@ -1,16 +1,18 @@
 import * as React from 'react';
 import { UIMessage } from '../../../data';
 
-import { Props } from '../types';
+import { Props, PFC } from '../helpers';
 
-export interface UIMessageProps {
+interface UIMessageProps {
   message: UIMessage;
-  delete: Function;
+  delete: () => void;
 }
 
-export const UIMessageItem =
-  (props: Props<UIMessageProps>) => (
+const UIMessageItem: PFC<UIMessageProps> =
+  (props) => (
     <div className={'ui-message ui-message' + props.message.type}>
       {props.message.text} <span onClick={e => props.delete()}>delete</span>
     </div>
   );
+
+export default UIMessageItem;

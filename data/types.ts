@@ -1,16 +1,16 @@
-export interface UIMessage {
+export type UIMessage = {
   id: number;
   text: string;
   type: UIMessageType;
-}
+};
 
 export type UIMessageType = 'info' | 'success' | 'error';
 
-export interface MessagingState {
-  nextId: number;
+export type MessagingState = {
+  lastMessage: number;
   messages: UIMessage[];
-}
+};
 
-export interface State {
+export type State = {
   messaging: MessagingState;
-}
+};
